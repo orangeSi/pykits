@@ -11,7 +11,7 @@ python fastakit.py replace_base  --seq_pos_list seq_pos_list  --pos_count_from 1
 # or this just one pos
 python fastakit.py replace_base  --seq_id 3 --pos_start 1 --pos_end 30 --pos_count_from 1 --seq_file assembly.fa --output assembly.new.fa
 ```
-#### dependence:
+#### python package dependence:
 ```
 biopython >= 1.72
 fire >= 0.1.3
