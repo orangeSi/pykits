@@ -35,7 +35,7 @@ usage2: if you upload genome to ncbi, and ncbi told your genome has some base is
             after you validate that and want to replace the region with N, you can:
                 blast adapter.fa to your genome get m6 output, cat m6|awk '{print $2","$9","$10}' >adapter.to.assembly.m6.replace.list
                 python *py replace_base  --seq_pos_list adapter.to.assembly.m6.replace.list  --pos_count_from 1 --seq_file assembly.fa --output assembly.new.fa # seq_pos_list is multi line, seprate by ,
-                python *py replace_base  --seq_id 3 --pos_start 1 --pos_end 30 --pos_count_from 1 --seq_file adapter.fa --output out.fa
+                python *py replace_base  --seq_id 3 --pos_start 1 --pos_end 30 --pos_count_from 1 --seq_file assembly.fa --output out.fa
 
         '''
         pass
