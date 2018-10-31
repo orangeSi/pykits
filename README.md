@@ -19,8 +19,7 @@ biopython >= 1.72
 fire >= 0.1.3
 Python 3.6.1 :: Anaconda custom (64-bit)
 ```
-<br>
-<br>
+<br><br>
 
 ############################################################################################
 ### fire_table.py<br>
@@ -38,3 +37,25 @@ fire >= 0.1.3
 pandas >= 0.23.4
 Python 3.6.1 :: Anaconda custom (64-bit)
 ```
+<br><br>
+
+############################################################################################
+### fire_sns.py
+```
+# heatmap homemade for category fragments data, you can defined the block freely by --value_segments !
+python fire_sns.py heatmap-homemade --data Class.gt1.kruskal.test.txt.new2 --header 0 --index-col 0 --linewidths 0.2 --outdir . --prefix Class.gt1.kruskal.test.txt.new2.heatmap --oformat pdf --order_x LP.0d,LP.L.7d,LP.L.14d,LP.S.7d,LP.S.14d,OJ.0d,OJ.L.7d,OJ.L.14d,OJ.S.7d,OJ.S.14d --xlabel-rotation 90 --ylabel-rotation 0 --legend-ncol 1 --color-segments '#FAEBD7,#FFEBCD,#F5DEB3,#8B4513' --value_segments 0.5:1,1:2,2:5,5:15
+
+# barplot
+python fire_sns.py  barplot --outdir . --prefix  xx --data Species.all_relative_abundance.xls --oformats "pdf,png" barplot --fig_width_scale 0.35 --fig-height 10 --legend-locus bottom --ncol-leg 0
+```
+#### python package dependence:
+```
+fire >= 0.1.3
+matplotlib >= 3.0.0
+palettable >= 3.1.1
+pandas >= 0.23.4
+seaborn >= 0.9.0
+Python 3.6.1 :: Anaconda custom (64-bit)
+```
+
+
