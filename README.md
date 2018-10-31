@@ -1,7 +1,7 @@
 # pykits
 
 <br>
-##########################################################################################
+########################################################################################
 ### fastakit.py<br>
 #### usage1:<br>
 If you upload genome to ncbi, and ncbi told your genome has some base is alignment to adapter, after you validate that and want to replace the region with N,
@@ -19,9 +19,9 @@ biopython >= 1.72
 fire >= 0.1.3
 Python 3.6.1 :: Anaconda custom (64-bit)
 ```
+
 <br>
-<br>
-##########################################################################################
+########################################################################################
 ### fire_table.py<br>
 #### for metagenome/16s/vcf or other data process:
 ```
