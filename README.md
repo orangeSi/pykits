@@ -18,4 +18,17 @@ fire >= 0.1.3
 Python 3.6.1 :: Anaconda custom (64-bit)
 ```
 
-
+### fire_table.py<br>
+#### for metagenome/16s/vcf or other data process:
+```
+# extract column or row or both by keywords, also support extrac sample name by group name
+python fire_table.py extract --data Phylum.gt1percent.kruskal.test.txt.new3 --keywords A.S.14d,C.S.7d --extract_index 0 \
+	--extract_column 1 	--prefix test4 --header 0 --index_col 0 --sample2group_fileds 0,1 --sample2group sample2group.txt \
+	--sample2group_fileds "0,1" --same_outdir 1 --keep_metadata 1 --skip_not_exists 0
+```
+#### python package dependence:
+```
+fire >= 0.1.3
+pandas >= 0.23.4
+Python 3.6.1 :: Anaconda custom (64-bit)
+```
