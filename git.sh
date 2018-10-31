@@ -3,9 +3,9 @@ then
 	echo "sh $0 <git commit -m > <git add >example: sh $0 'update readme' 'README.md */*' "
 	exit
 fi
+set -vex
 commit=$1
 add=$2
-set -vex
 git add $add
 git commit -m "$commit"
 git push -u origin master
