@@ -1,9 +1,9 @@
 # pykits
 
-<br>
 ########################################################################################
+
 ### fastakit.py<br>
-#### usage1:<br>
+#### usage:<br>
 If you upload genome to ncbi, and ncbi told your genome has some base is alignment to adapter, after you validate that and want to replace the region with N,
 you can: blast adapter.fa to your genome get m6 output, cat m6|awk '{print $2","$9","$10}' > adapter.to.assembly.m6.replace.list
 ```
@@ -20,8 +20,9 @@ fire >= 0.1.3
 Python 3.6.1 :: Anaconda custom (64-bit)
 ```
 
-<br>
+
 ########################################################################################
+
 ### fire_table.py<br>
 #### for metagenome/16s/vcf or other data process:
 ```
@@ -30,6 +31,7 @@ python fire_table.py extract --data Phylum.gt1percent.kruskal.test.txt.new3 --ke
 	--extract_column 1 	--prefix test4 --header 0 --index_col 0 --sample2group_fileds 0,1 --sample2group sample2group.txt \
 	--sample2group_fileds "0,1" --same_outdir 1 --keep_metadata 1 --skip_not_exists 0
 ```
+
 #### python package dependence:
 ```
 fire >= 0.1.3
