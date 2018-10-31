@@ -10,6 +10,11 @@ you can: blast adapter.fa to your genome get m6 output, cat m6|awk '{print $2","
 	# or this just one pos
 	python fastakit.py replace_base  --seq_id 3 --pos_start 1 --pos_end 30 --pos_count_from 1 --seq_file assembly.fa --output assembly.new.fa
 ```
+#### dependence:
+```
+biopython >= 1.72
+fire >= 0.1.3
+Python 3.6.1 :: Anaconda custom (64-bit)
+```
 
-#####################################################################################################################################
 
