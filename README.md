@@ -1,7 +1,6 @@
 # pykits
 
 ############################################################################################
-
 ### fastakit.py<br>
 #### usage:<br>
 If you upload genome to ncbi, and ncbi told your genome has some base is alignment to adapter, after you validate that and want to replace the region with N,
