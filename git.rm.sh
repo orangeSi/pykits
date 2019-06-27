@@ -1,16 +1,12 @@
 if [ "$#" -ne 2 ];
 then
-	echo "
-sh $0 
-<git commit -m > 
-<git add ,example: sh $0 'update readme' 'README.md */*'>
-"
+	echo "sh $0 <git rm  file > <git commit -m>"
 	exit
 fi
 set -vex
-commit=$1
-add=$2
-git add $add
+files=$1
+commit=$2
+git rm -r --cached $files
 git commit -m "$commit"
 git push -u origin master
 
